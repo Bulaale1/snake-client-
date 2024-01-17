@@ -15,6 +15,10 @@ const connect = function() {
   conn.on('connect',()=>{
     console.log('Connected successfully');
     conn.write("Name:YMH");
+    conn.write('"Move: up" ');
+    conn.write("Move: down");
+    conn.write("Move: left");
+    conn.write("Move: right");
 
   });
 
