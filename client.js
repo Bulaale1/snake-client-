@@ -14,11 +14,11 @@ const connect = function() {
   });
   conn.on('connect',()=>{
     console.log('Connected successfully');
-    conn.write("Name:YMH");
-    conn.write('"Move: up" ');
-    conn.write("Move: down");
-    conn.write("Move: left");
-    conn.write("Move: right");
+    conn.write("Name:ymh");
+    conn.write('"Move:up" ');
+    conn.write("Move:down");
+    conn.write("Move:left");
+    conn.write("Move:right");
 
   });
 
@@ -28,6 +28,4 @@ const connect = function() {
   return conn;
 };
 
-console.log("Connecting ...");
-// connect();
-module.exports = connect;
+module.exports = {connect};
